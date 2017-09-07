@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "abhi";
-$dbname = "login";
+$dbname = "register";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
  echo here;
@@ -14,18 +14,22 @@ $name=$_POST["username"];
 
 $password=$_POST["password"];
 
-$sql = "SELECT * FROM users where username='$name' and password='$password'";//itha name use karyla hava na??? ho
+$sql = "SELECT * FROM customer where mobile='$name' and password='$password'";
 $result = $conn->query($sql);
+
 
 if ($result->num_rows > 0) {
     session_start();
     
     $_SESSION['username']=$name;
-    $sql = "SELECT * FROM users ";
+    $sql = "SELECT * FROM customer ";
     $result = $conn->query($sql);
-    $_SESSION['users']=$result->num_rows;
+    $_SESSION['customer']=$result->num_rows;
     echo success;
-    //header("Location: one.php");
+    $getc = mysqli_fetch_array($sql);
+    $mobile=$getc['mobile'];
+    
+    header("Location: ../regispg2/regispg2.html");
 
 } else {
     $_SESSION['message']='login failed';

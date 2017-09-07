@@ -17,7 +17,7 @@
             </li>
             <li><a href="one.php">Customer Login</a></li>
             <li><a href="#"></a></li>
-            <li><a href="#">SIGN UP</a></li>
+            <li><a href="../now/register.php">SIGN UP</a></li>
             <li><a href="#">Employee Login</a></li>
             <li><a href="#">LOG OUT</a></li>
 
@@ -30,7 +30,7 @@
          
         <form action="login.php" method="POST">
             <div class="form-input">
-                <input type="text" name="username" placeholder="Enter Username">
+                <input type="text" name="username" placeholder="Enter Registered Mobile Number">
                 </div>
                
             <div class="form-input">
