@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "abhi";
@@ -19,15 +19,13 @@ $result = $conn->query($sql);
 
 
 if ($result->num_rows > 0) {
-    session_start();
-    
-    $_SESSION['username']=$name;
+
+    $_SESSION["username"]=$name;
     $sql = "SELECT * FROM customer ";
     $result = $conn->query($sql);
     $_SESSION['customer']=$result->num_rows;
     echo success;
-    $getc = mysqli_fetch_array($sql);
-    $mobile=$getc['mobile'];
+    
     
     header("Location: ../regispg2/regispg2.html");
 
