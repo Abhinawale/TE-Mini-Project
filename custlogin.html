@@ -1,0 +1,72 @@
+<html>
+    <head>
+
+    <title>Customer_Login</title>
+    <meta name-"viewport" content-type="width=device-width inital-scale=1">
+    <link rel="stylesheet"  href="css/style11.css">
+
+    </head>
+<body>
+
+    <div class="menu">
+
+
+        <ul>
+                 <h1>DTH Services</h1>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+             <li><a href="packages.html">Packages</a></li>
+
+
+             <li class="right"><a href="logout.php">Logout</a></li>
+             <li class="right"><a href="getconnected.php">Get Connected</a></li>
+             <li class="right"><a href="custlogin.html"><b>Login</b></a></li>
+
+
+
+
+        </ul>
+    </div>
+        <div class="cont">
+            </div>
+    <div class="container">
+         <img src="images/login2-03.png">
+
+        <form action="login.php" method="POST" name="myForm" onsubmit="return validateForm()">
+            <div class="form-input">
+                <input type="text" id="m1" name="username" placeholder="Enter User-ID">
+                </div>
+
+            <div class="form-input">
+                <input type="password" name="password" placeholder="Enter Password">
+                </div>
+
+            <input type="submit" name="submit" value="LOGIN" class="btn-login">
+
+        </form><br>
+        <a href="#">Forgot Password?</a>
+         <footer>
+        <p><a href="form.html">Sign Up</a></p>
+    </footer>
+        </div>
+
+<script>
+function validateForm() {
+
+    var x = document.forms["myForm"]["username"].value;
+    if (x == "") {
+         
+        alert("Username must be filled!");
+        return false;
+        //document.getElementById("m1").style.border-color = "red";
+    }
+
+    var y = document.forms["myForm"]["password"].value;
+    if (y == "") {
+        alert("Password field empty!");
+        return false;
+    }
+}
+</script>
+    </body>
+    </html>

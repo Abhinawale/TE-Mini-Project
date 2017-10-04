@@ -1,0 +1,168 @@
+@font-face {
+    font-family: GeosansLight;
+    src: url(../fonts/GeosansLight.ttf);
+}
+
+
+html {
+
+    background-image: url(../images/bkgnd1.jpg) ;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+overflow: hidden;
+}
+.menu{
+
+    padding-left: 10px;
+    width: device-width;
+    height: 50px;
+    overflow: hidden;
+    background-image: url('../images/logo-01.png');
+    background-color: rgba(50,73,94,0.7);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    }
+
+    .main{
+        text-align: center;
+        width:1150px;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+
+    overflow: hidden;
+
+}
+
+li {
+    float: left;
+}
+
+
+
+li a {
+   font-family: Verdana;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    border: black;
+    background-color: rgba(60,103,100,0.7);
+
+}
+
+
+h1{
+    display: inline-table;
+    float: left;
+    text-align: center;
+    margin-top: 0px;
+    margin-top: 0px;
+    padding: 5px;
+
+
+}
+.right{
+	float: right;
+}
+
+body {
+    margin: 0;
+    width: device-width;
+
+}
+
+
+    .profile{
+        width:250px;
+        height:358px;
+        margin-top:120px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 2px solid #141433;
+       margin-left: 20px;
+        margin-bottom: 30px;
+        padding-top: 10px;
+        background-color:#90EEEB;
+    }
+
+    .profile ul{
+margin: -14px
+    }
+
+
+
+    .profile li a {
+        font-family:'Varela Round', sans-serif;
+        font-size: 16px;
+         display: block;
+         margin-left: 0px;
+         margin-top: 5px;
+         color: #2F0A52;
+         text-align: left;
+         padding-top: 16px;
+         text-decoration: none;
+
+     }
+     .profile li a:hover {
+         color: #4D1D81;
+        border: #BBE8E7;
+        background-color: rgba(88, 133, 166, 0.70);
+       text-decoration: none;
+       text-align: left;
+       font-size: 18px;
+       border: 3px solid #2A0158;
+       border-top-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+    }
+
+    .welcome{
+        margin-top: 26px;
+        font-size: 25px;
+        font-family: 'GeosansLight';
+        color: #141433
+    }
+
+
+
+.window{
+    overflow: auto;
+  margin-right: 100px;
+    margin-left: 420px;
+    margin-top: -400px;
+    margin-bottom:20px;
+    /*border-radius: 20px;*/
+    font-family:'Varela Round', sans-serif;
+    width:850px;
+    height:360px;
+    float :right;
+    background-color:#B4EEEC;
+    border: 2px solid #060E47;
+    font-family:'Varela Round', sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.btn-login{
+    cursor:pointer;
+    margin-top: 5px;
+    padding: 7px 7px;
+    color :white;
+    background-color: #4286f4;
+    font-size: 18;
+    font-family: sans-serif;
+    border-radius:10px;
+}
+
+.btn-login:hover{
+    background-color: #062960;
+}

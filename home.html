@@ -1,44 +1,145 @@
 <html>
     <head>
 
-    <title>one</title>
+    <title>Welcome to DTH!</title>
     <meta name-"viewport" content-type="width=device-width inital-scale=1">
-    <link rel="stylesheet"  href="/var/www/html/project/home/style1.css">
-    
+    <link rel="stylesheet"  href="css/home.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
     </head>
  <body>
     <div class="menu">
         
                 
         <ul>
-                <h1>DTH Services</h1>
-                
+               <h1>DTH Services</h1>
             <li><a href="home.html"><b>HOME</b></a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="one1.html">Customer Login</a></li>
-            <li><a href="#">...</a></li>
-            <li><a href="#">SIGN UP</a></li>
-            <li><a href="emplog.html">Employee Login</a></li>
-            <li><a href="#">LOG OUT</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            
+             <li class="right"><a href="logout.php">Logout</a></li>
+            <li class="right"><a href="getconnected.php">Get Connected</a></li>
+            <li class="right"><a href="custlogin.html">Login</a></li>
+            
+            
             </ul>
         
   </div>
- 
-    <div class="slider-holder" align="left">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span>
-        <div class="image-holder">
-            <img src="/var/www/html/project/image/IMG-20170128-WA0057.jpg" class="slider-image" />
-            <img src="/var/www/html/project/image/IMG-20170128-WA0065.jpg" class="slider-image" />
-            <img src="/var/www/html/project/image/IMG-20170128-WA0069.jpg" class="slider-image" />
-        </div>
-        <div class="button-holder">
-            <a href="#slider-image-1" class="slider-change"></a>
-            <a href="#slider-image-2" class="slider-change"></a>
-            <a href="#slider-image-3" class="slider-change"></a>
-        </div>
-    </div>
+
+     <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/Presentation1.jpg">
+    <div class="text1"><a href="custlogin.html">Click here to login!</a></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/Presentation5.jpg">
+      </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/Presentation4.jpg">
+    
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div> 
+
+
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+    <a href="getconnected.php" class="shake-btn"> Become a <b>DTH USER</b> today!</a>  
+
+
+<div class="whydth">
+<p><b>Why DTH?</b></p>
+<p><font color="black">More than just a connection, DTH gives you a much better experience of watching TV. </p>
+</div>
+
+
+<div class="dthb">
+<button class="dthbutton">
+24/7 SERVICES
+<br><font size="-10px">24 HOURS CUSTOMER-CARE</font></button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="dthbutton">
+QUICK RECHARGE
+<br>
+<font size="-10px">ANYTIME.ANYWHERE.</font></button>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="dthbutton">
+STRONG NETWORK
+<BR>
+<font size="-10px">SO YOU DONT MISS ANYTHING</font> </button>
+<br><br><br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<button class="dthbutton">
+EXCITING PACKAGES
+<BR>
+<font size="-10px">HIGH QUALITY.LOW PRICE.</font></button>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="dthbutton">
+RECORD<BR><font size="-10px">PAUSE.PLAY.REWIND.</font></button>
+</div>
+
+<br><br><br><br><br>
+<footer>
+<div class="quicklinks">
+Quicklinks
+<div class="links">
+<a href="home.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="contactus.html">Contact us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="packages.html">View Packages</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="custlogin.html">Login</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="getconnected.php">Get connected</a>
+</div>
+</div>
+</footer>
  </body>
 </html>
